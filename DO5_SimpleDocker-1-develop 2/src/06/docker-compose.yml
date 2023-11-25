@@ -1,0 +1,10 @@
+version: "3"
+services:
+  server:
+    container_name: maya_server
+    build: ../05/.
+  webserver:
+    container_name: maya_nginx
+    build: .
+    ports:
+      - "80:8080"
